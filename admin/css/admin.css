@@ -1,0 +1,203 @@
+/* CSS Document */
+#login-tab{width: 100%; text-align: center; margin: 0 auto; background-color: #3e6d38; color: #fff; text-transform: uppercase; font-weight: 600;}
+body{background-color: #f4f5fa;}
+#completar-escaparate{border-radius: 10px; box-shadow: 0 0 15px 0px rgb(0 0 0 / 36%); padding: 15px; margin-top: 25px}
+#box-color{margin: 40px auto 20px auto;}
+#ytplayer{width: 100%; max-width: 260px; height: auto; max-height: 150px}
+#home-mi-escaparate{min-height: 100vh; overflow-x: hidden;}
+#home-mi-escaparate .row{margin-left: 0; margin-right: 0}
+#lateralpanel{background-color: #fdeb00; min-width: 210px; max-width: 211px; border-right: 3px solid #3e6d38; display: block; transition: all 0.3s ease; position: fixed; min-height: 100vh; z-index: 2; }
+.scroller{overflow-y: auto; height: 100%; position: fixed; min-width:207px;background-color: #fdeb00;}
+#menubar{position: fixed; top: 11px; transition: all 0.3s ease;}
+#content-info{width: 100%; padding: 0; transition: all 0.3s ease;}
+#logoshow{background-size: cover; background-repeat: no-repeat; background-position: center; height: 250px; width: 100%; padding: 50px 0}
+#imagecover{width: 150px; height: 150px; border:5px solid #fff; border-radius: 75px; margin: 0 auto; background-size: cover; background-position: center; box-shadow: 0 0 18px 12px #0000007a;-webkit-box-shadow: 0 0 18px 12px #0000007a;}
+#logoshow h2{display: block; width: 100%; text-align: center; margin-top: 10px; font-weight: bold; font-size: 1.3em}
+
+#menubar{padding: 0; margin: 2px 15px; list-style: none; max-width: 180px}
+#menubar li{padding: 10px 10px; color:#121212; margin: 0; border-bottom:2px solid #d0c100; font-weight: 600; width: 100%}
+#menubar li a{transition: all ease-in 0.3s; -webkit-transition: all ease-in 0.3s; display: block; font-size: 15px;}
+#menubar li a.active,#menubar li:hover a{padding: 0px 10px 0px 15px; color: #121212; color: #e63425;}
+
+#titlesection{color: #3e6d38; border-left: 5px solid #e63425; padding-left: 5px}
+#info-content,#edit-product{padding: 15px;}
+.lista-prodcutos{background-color: #fff; box-shadow: 0 0 16px 0px #00000040;-webkit-box-shadow: 0 0 16px 0px #00000040; border-radius: 10px!important; margin-bottom: 15px}
+#tipo_publi_header {
+  text-transform: capitalize;
+}
+#productslist span{display: block;}
+
+#edit-product .form-group{width: 100%}
+#edit-product hr{width: 100%}
+#panel footer{margin-left: 250px;}
+
+#productslist img{min-width: 80px}
+/*TAGS*/
+.label-primary {
+    background-color: #337ab7;
+}
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  padding: 4px 6px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 22px;
+  cursor: text;
+  width: 100%;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+	margin-right: 2px;
+	color: white;
+	padding: 1px 2px;
+	border-radius: 3px;
+	background-color: #3e6d38;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.bootstrap-tagsinput input{width: 100%; padding: .375rem .75rem;}
+
+/*TAGS*/
+.Vstatus{display: block; font-size: 13px; color: #575757}
+.Vfecha{display: block; font-size: 12px; color: #575757}
+.Vpedidos{display: block; font-size: 14px; color: #575757; font-weight: bold}
+
+.Vnombrec{display: block; font-size: 14px}
+.Vemailc{display: block; font-size: 13px; text-decoration: none; color: #3e6d38}
+.btn-detalle{width: 100%; margin: 15px 0}
+.contact-info-V{margin: 10px 0}
+.mysalesprodcut{}
+.mysalesprodcut td,.mysalesprodcut th{vertical-align: middle!important;}
+.mysalesprodcut th.img{width: 60px;}
+.mysalesprodcut td.name{width: auto; text-overflow: ellipsis;}
+.mysalesprodcut td.precio{width: 200px}
+.mysalesprodcut td.cantidad{width: 100px}
+.mysalesprodcut td.variante{width: 500px}
+.mysalesprodcut td.variante span{display: block; margin-bottom: 5px}
+.mysalesprodcut td{ font-weight: normal}
+/*MIS VENTAS*/
+form .hidden{display: none}
+/*MIS VENTAS*/
+
+/*REPORTES*/
+.filter{background: #fff; border-radius: 5px; padding: 5px 15px;}
+.filter label{order-bottom: 1px solid #333;}
+/*REPORTES*/
+
+small.time {
+    display: block;
+    font-size: 11px;
+}
+small.showtime{
+	display: block;
+	font-size: 12px;
+}
+.clic{cursor: pointer; transition: all ease-out 0.3s}
+tr:nth-of-type(odd).click:hover, .clic:hover{background-color: #fdeb00!important}
+
+
+#reporte tfoot{font-weight: bold; color: #fff; font-size: 16px}
+
+.ui-title{display: none!important}
+#content-info{padding-left: 210px}
+
+/*PLANTILLAS*/
+#box-plantilla{position: relative;height: 600px;}
+.plantilla{max-width: 500px; max-height: 500px; width: 500px; height: 500px; background-position: center; background-repeat: no-repeat; background-size: contain; position:absolute; top: 0; left: 0; margin: 15px auto; display: block}
+
+@media (max-width:1300px){
+	#ocultar,#regresar{margin-top: 15px}
+	
+}
+@media (max-width:1024px){
+	.id-box{max-width: 100px; font-size: 11px}
+	.hidden-row{display: none}
+	#menubar li a.active, #menubar li:hover a{padding: 5px 10px 5px 15px;}
+	.hot-box strong{font-size: 12px}
+	.hot-box h1{font-size: 16px}
+}
+@media (max-height:800px){
+	#menubar{top:0;position: absolute;}
+	#menubar li{padding: 10px 10px;}
+	#menubar li a.active, #menubar li:hover a{padding: 0px 5px 0px 15px;}
+}
+@media (max-width:992px){
+	#lateralpanel{min-width: 120px; max-width: 121px}
+	#menubar{margin: 15px 0; padding: 15px 10px; width: 120px}
+	.scroller{min-width:117px;}
+	#menubar li{padding: 5px 0px;overflow-wrap: break-word;}
+	#menubar li a{padding: 5px 0; font-size: 12px; text-align: center}
+	#menubar li a svg{display: block; margin: 0 auto}
+	#ocultar,#regresar{margin-top: 0}
+	#content-info{padding-left: 120px}
+}
+@media (max-width:767px){
+	#lateralpanel.collapsing{min-width: 120px; max-width: 121px}
+	#lateralpanel.collapse {min-width: 0px; max-width: 1px; overflow-x: hidden}
+	#lateralpanel.collapse.show{min-width: 120px; max-width: 121px; position: relative;}
+	#lateralpanel.collapse #menubar{ width: 0;}
+	#lateralpanel.collapse.show #menubar{display:block; width: 120px; padding: 15px 10px}
+	#lateralpanel.collapsing #menubar{ width: 120px}
+	#home-mi-escaparate .row{margin-right: -15px; margin-left: -15px;}
+	#menubar{top: 0; position: fixed; overflow: hidden; padding: 0;}
+	#lateralpanel{height: auto; overflow-y: auto;}
+	#content-info{padding-left:0}
+	#content-info .navbar .container{max-width: 100%}
+}
+
+@media (max-width:767px){
+	#lateralpanel.collapsing{min-width: 120px; max-width: 121px}
+	#lateralpanel.collapse {min-width: 0px; max-width: 1px; overflow-x: hidden}
+	#lateralpanel.collapse.show{min-width: 120px; max-width: 121px; height: 100%;}
+	#lateralpanel.collapse #menubar{ width: 0;}
+	#lateralpanel.collapse.show #menubar{display:block; width: 120px; padding: 15px 10px;position: absolute;}
+	#lateralpanel.collapsing #menubar{ width: 120px}
+	#lateralpanel.collapse .scroller{min-width: 0px}
+	#lateralpanel.collapsing .scroller,#lateralpanel.collapse.show .scroller{min-width: 117px}
+	#home-mi-escaparate .row{margin-right: -15px; margin-left: -15px;}
+	#menubar{top: 0; position: fixed; overflow: hidden; padding: 0;}
+	#lateralpanel{height: auto; overflow-y: auto;}
+	#content-info{padding-left:0}
+	#content-info .navbar .container{max-width: 100%}
+}
+

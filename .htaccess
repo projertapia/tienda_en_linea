@@ -1,0 +1,140 @@
+# Activar RewriteEngine
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+ 
+# BEGIN Expire headers  
+<IfModule mod_expires.c>  
+  # Turn on the module.
+  ExpiresActive on
+  # Set the default expiry times.
+ ExpiresDefault "access plus 2 days"
+ ExpiresByType image/jpg "access plus 1 month"
+ ExpiresByType image/svg+xml "access 1 month"
+ ExpiresByType image/gif "access plus 1 month"
+ ExpiresByType image/jpeg "access plus 1 month"
+ ExpiresByType image/png "access plus 1 month"
+ ExpiresByType text/css "access plus 1 month"
+ ExpiresByType text/javascript "access plus 1 month"
+ ExpiresByType application/javascript "access plus 1 month"
+ ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ ExpiresByType image/ico "access plus 1 month"
+ ExpiresByType image/x-icon "access plus 1 month"
+ ExpiresByType text/html "access plus 600 seconds"
+</IfModule>  
+# END Expire headers  
+ 
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  clientes/NOMBRE/
+#   Salida: clientes.php?id=NOMBRE
+
+#RewriteBase /
+#RewriteCond %{HTTP_HOST} !^localhost
+#RewriteCond %{HTTP_HOST} ([^.]+)\.localhost
+
+#RewriteCond %{HTTP_HOST} !^ecommerce.com
+#RewriteCond %{HTTP_HOST} ([^.]+)\.ecommerce.com
+
+#RewriteRule (.*) subdom.php?esca=%1 [L]
+
+#PRODUCTIVO
+ErrorDocument 404 https://ecommerce.com/404
+RewriteRule ^$ https://ecommerce.com.mx/ [L]
+RewriteRule ^404$ 404.php [L]
+RewriteRule ^entrar$ login.php [L]
+RewriteRule ^salir$ salir.php [L]
+RewriteRule ^influencers$ escaparates.php [L]
+RewriteRule ^empresas$ escaparates.php [L]
+RewriteRule ^profesionales$ escaparates.php [L]
+RewriteRule ^favoritos$ favoritos.php [L]
+RewriteRule ^mi-cuenta$ micuenta.php [L]
+RewriteRule ^mis-compras$ miscompras.php [L]
+RewriteRule ^mis-direcciones$ misdirecciones.php [L]
+RewriteRule ^carrito$ carrito.php [L]
+RewriteRule ^checkout$ checkout.php [L]
+RewriteRule ^buscar$ buscar.php [L]
+RewriteRule ^terminos-y-condiciones$ terminos-y-condiciones.php [L]
+RewriteRule ^preguntas-frecuentes$ faq.php [L]
+RewriteRule ^aviso-legal$ aviso_legal.php [L]
+RewriteRule ^entrega$ entrega.php [L]
+RewriteRule ^categorias$ categorias.php [L]
+RewriteRule ^sobre-nosotros$ sobre-nosotros.php [L]
+RewriteRule ^contactanos$ contacto.php [L]
+RewriteRule ^contactanos/gracias$ contacto-gracias.php [L]
+RewriteRule ^mapa-de-sitio$ mapa-de-sitio.php [L]
+RewriteRule ^historias$ historias.php [L]
+RewriteRule ^autorizacion$ functions/autorizacion.php [L]
+RewriteRule ^confirmacion-pago$ confirmacion-pago.php [L]
+RewriteRule ^recuperar$ recuperar.php [L]
+RewriteRule ^influencers/([^/]*)$ escaparate.php?cat=$1 [L]
+RewriteRule ^recuperar/([^/]*)$ recuperar.php?clave=$1 [L]
+RewriteRule ^empresas/([^/]*)$ escaparate.php?cat=$1 [L]
+RewriteRule ^profesionales/([^/]*)$ escaparate.php?cat=$1 [L]
+
+RewriteRule ^influencers/([^/]*)/([^/]*)$ producto.php?tienda=$1&producto=$2 [L]
+RewriteRule ^empresas/([^/]*)/([^/]*)$ producto.php?tienda=$1&producto=$2 [L]
+RewriteRule ^profesionales/([^/]*)/([^/]*)$ producto.php?tienda=$1&producto=$2 [L]
+
+#ADMIN ESCAPARATES
+RewriteRule ^mi-escaparate$ mi-escaparate/index.php [L]
+RewriteRule ^mi-escaparate/entrar$ mi-escaparate/login.php [L]
+RewriteRule ^mi-escaparate/nuevo$ mi-escaparate/nuevoescaparate.php [L]
+RewriteRule ^mi-escaparate/nuevo/paso2$ mi-escaparate/paso2nuevoescaparate.php [L]
+RewriteRule ^mi-escaparate/nuevo/paso3$ mi-escaparate/paso3nuevoescaparate.php [L]
+RewriteRule ^mi-escaparate/mis-productos$ mi-escaparate/productos.php [L]
+RewriteRule ^mi-escaparate/mis-productos/editar$ mi-escaparate/editar-producto-new.php [L]
+RewriteRule ^mi-escaparate/crear-nuevo$ mi-escaparate/crear-nuevo-new.php [L]
+RewriteRule ^mi-escaparate/mis-ventas$ mi-escaparate/mis-ventas.php [L]
+RewriteRule ^mi-escaparate/mis-ventas/detalle-de-venta$ mi-escaparate/detalle-de-venta.php [L]
+RewriteRule ^mi-escaparate/mis-datos$ mi-escaparate/mis-datos-new.php [L]
+RewriteRule ^mi-escaparate/mis-reportes$ mi-escaparate/mis-reportes.php [L]
+RewriteRule ^mi-escaparate/crear-promo$ mi-escaparate/nueva-promocion.php [L]
+RewriteRule ^mi-escaparate/mis-promociones$ mi-escaparate/mis-promociones.php [L]
+RewriteRule ^mi-escaparate/mis-promociones/editar$ mi-escaparate/editar-promociones.php [L]
+RewriteRule ^mi-escaparate/crear-promo$ mi-escaparate/nuevapromo.php [L]
+RewriteRule ^mi-escaparate/crear-productos$ mi-escaparate/creador-productos.php [L]
+RewriteRule ^mi-escaparate/mi-plan$ mi-escaparate/mi-plan.php [L]
+RewriteRule ^mi-escaparate/mi-plan/pagar$ mi-escaparate/pagar-plan.php [L]
+RewriteRule ^mi-escaparate/mi-plan/confirmacion-pago$ mi-escaparate/confirmacion-pago.php [L]
+RewriteRule ^mi-escaparate/salir$ mi-escaparate/salir.php [L]
+RewriteRule ^mi-escaparate/recuperar$ mi-escaparate/recuperar.php [L]
+RewriteRule ^mi-escaparate/recuperar/([^/]*)$ mi-escaparate/recuperar.php?clave=$1 [L]
+
+#ADMIN
+RewriteRule ^admin$ admin/index.php
+RewriteRule ^admin/entrar$ admin/login.php [L]
+RewriteRule ^admin/publicidad$ admin/publicidad.php [L]
+RewriteRule ^admin/escaparates-principales$ admin/escaparates-principales.php [L]
+RewriteRule ^admin/promociones$ admin/promociones.php [L]
+RewriteRule ^admin/publicidad/reporte$ admin/reporte-publicidad.php [L]
+RewriteRule ^admin/nueva/publicidad$ admin/nueva-publicidad.php [L]
+RewriteRule ^admin/clientes-publicidad$ admin/clientes-publicidad.php [L]
+RewriteRule ^admin/publicidad/editar$ admin/editar-publicidad.php [L]
+RewriteRule ^admin/escaparates$ admin/escaparates.php [L]
+RewriteRule ^admin/escaparates/ver$ admin/ver-escaparate.php [L]
+RewriteRule ^admin/escaparates/reportes$ admin/reporte-escaparate.php [L]
+RewriteRule ^admin/paquetes$ admin/paquetes.php [L]
+RewriteRule ^admin/paquetes/nuevo$ admin/nuevo-paquete.php [L]
+RewriteRule ^admin/paquetes/editar$ admin/editar-paquete.php [L]
+RewriteRule ^admin/clientes$ admin/clientes.php [L]
+RewriteRule ^admin/clientes/ver$ admin/ver-clientes.php [L]
+RewriteRule ^admin/reportes/escaparate$ admin/reporte-tienda.php [L]
+RewriteRule ^admin/escaparates/detalle-de-venta$ admin/detalle-de-venta.php [L]
+RewriteRule ^admin/mis-datos$ admin/mis-datos.php [L]
+RewriteRule ^admin/administradores$ admin/admins.php [L]
+RewriteRule ^admin/nuevo/admin$ admin/nuevo-admin.php [L]
+RewriteRule ^admin/banners$ admin/banners.php [L]
+RewriteRule ^admin/contenido$ admin/contenido.php [L]
+RewriteRule ^admin/contenido/editar$ admin/editar-contenido.php [L]
+RewriteRule ^admin/salir$ admin/salir.php [L]
+RewriteRule ^admin/recuperar$ admin/recuperar.php [L]
+RewriteRule ^admin/recuperar/([^/]*)$ admin/recuperar.php?clave=$1 [L]
+#PRODUCTIVO
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Configure el paquete “ea-php80” como el lenguaje de programación predeterminado “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php80___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

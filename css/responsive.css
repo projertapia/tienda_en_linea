@@ -1,0 +1,153 @@
+/* CSS Document */
+/*1920PX*/
+@media (min-width: 1921px){
+	.container{max-width: 1600px!important}
+	#banner-home{height: 640px;}
+}
+@media (max-width: 1920px) and (min-width: 1601px){
+	.container{max-width: 1600px!important}
+	#banner-home{height: 640px;}
+}
+@media (max-width:1601px) and (min-width:1360px){
+    .container{max-width: 1300px!important}
+    #product-indicators li{max-height: 171px;}
+}
+@media (max-width:1601px) and (min-width:1201px){
+	#banner-home{height: 450px;}
+}
+@media (max-width:1440px) and (min-width:1224px){
+	.box-cover-shop{height: 244px;}
+}
+@media (max-width:1224px) and (min-width:780px){
+	#banner-home{height: 320px;}
+	.box-cover-shop { height: 200px;}
+	.title-section{font-size: 1.5em;}
+	figcaption h2{font-size: 1.8em;}
+}
+@media (max-width:992px) and (min-width:780px){
+	#buscarform{padding: 10px 0px; width: 230px;}
+	#s{width: 130px;}
+	#boletin-form{width: 335px;}
+	#emailboletin{width: 210px;}
+	address {text-align: center;}
+	.rel-prod-list{display: flex; border-bottom: solid 1px #3e6d38}
+	.list-producto-reciente{width: 33.33%; padding: 5px 10px 5px 0;}
+	.img-reciente{display: block; float: none; max-width: 100%; max-height: 100px; margin: 0 auto 10px;}
+	.title-reciente-articulo{margin-bottom: 5px;}
+	.price-reciente-articulo{margin: 0}
+}
+@media (max-width:991px){
+	#list-share{height: 37px; border-bottom: 1px solid rgba(0,0,0,.1); padding-bottom: 10px}
+	#ticket-carrito{margin-top: 25px}
+	#pages-links .nav-link{margin: 0 12px 0;}
+	.box-direccion-comprador{padding: 55px 15px 15px;}
+}
+@media (max-width:780px){
+	#top-line-links #collapsingNavbar1{display: block}
+	#visitantes-header{display: none}
+	#collapsingNavbar1 .navbar-nav{display: block; float: left;}
+	#collapsingNavbar1 .navbar-nav .nav-item{margin: 0 10px; width: 20px; display: inline-block;}
+	#home .container{width: 100%}
+	#banner-home{height: 260px;}
+	.box-cover-shop { height: 150px;}
+	.title-section{font-size: 1.2em;}
+	figcaption h2{font-size: 1.5em;}
+	#pages-links .nav-link{margin: 0 5px 0; font-size: 1em;}
+	#buscarform{width: 220px; padding: 0;}
+	#s{width: 120px;}
+	#boletin-form{width: 311px;}
+	#emailboletin{width: 190px;}
+	address{text-align: center}
+	.box-benef{margin-bottom: 10px}
+	.rel-prod-list{display: flex; border-bottom: solid 1px #3e6d38}
+	.list-producto-reciente{width: 33.33%; padding: 5px 10px 5px 0;}
+	.img-reciente{display: block; float: none; max-width: 100%; max-height: 100px; margin: 0 auto 10px;}
+	.title-reciente-articulo{margin-bottom: 5px;}
+	.price-reciente-articulo{margin: 0}
+	#mis-datos .container{width: 100%; max-width: 100%}
+}
+@media (max-width:767px){
+	.box-cover-shop {height: 270px;}
+	.title-section {font-size: 1.5em;}
+	#ads-footer{display: none}
+	#emailboletin {width: 159px;}
+	#links-cart .nav-item{margin: 0 5px; padding: 0 5px;}
+	figure table{}
+	figure.table td, figure.table th{width: 100%!important; display: block; text-align: left!important}
+}
+@media (max-width:575px){
+	#links-account a{display: block}
+	#links-account li{width: 50%; float: left;}
+	#links-account a:nth-child(2n+1) li{border-right: 1px solid #ADADAD;}
+	#links-account a:last-child li{width: 100%; border-right: none; text-align: center}
+	#left-tab{min-height:inherit; padding: 15px;}	
+	.editar-direccion{position:relative; right: inherit; margin-bottom: 10px; border-top: 1px solid #3e6d38;}
+	.box-direccion-comprador{margin: 15px 0;}
+	#adddireccion a{text-align: center; background-color: #3e6d38; border-radius: 30px; color: #fff; font-weight: 600; padding: 10px 0; display: block}
+	.box-direccion-comprador .collapse {margin-top: 25px;}
+	hidden{display: none;}
+}
+@media (max-width: 480px){
+	#collapsingNavbar1 .navbar-nav .nav-item{margin: 0 5px;}
+	.title-section{font-size: 1.5em;}
+	figcaption h2 {font-size: 2em;}
+	#emailboletin{width: 190px;}
+	#footer_ads{display: none}
+	#top-promo img{margin-bottom: 25px}
+	#links-footer div{margin-bottom: 15px}
+	.grid figure figcaption, .grid figure figcaption > a{max-height: 271px;}
+	.box-cover-shop{min-height: 265px;}
+	#home-banner-ads{padding: 0;}
+	#banner-home{height: 147px; background-position: center; background-size: contain;}
+	#pages-links .nav-link{font-size: 1.3em}
+	#links-cart .nav-link{font-size: 1.2em; margin: 10px 15px 0}
+	#emailboletin{width: 160px;}
+	.rel-prod-list{display: block; border-bottom: solid 1px #3e6d38; padding-bottom: 5px;}
+	.list-producto-reciente{width: 100%; padding: 15px 10px 5px 0; border-bottom: 1px solid #dcdcdc;}
+	.list-producto-reciente:last-child{border-bottom:none}
+	.img-reciente{display: block; float: left; max-width: 70px; max-height: 70px; margin: 0 5px 0 0;}
+	.title-recientes.title-recientes{font-size: 1.5em;text-align: center;}
+	#productos-recientes-box {margin: 25px 0;}
+	.price-grill{font-size: 1.3em;}
+	#nav-desc{width: 100%;}
+	#nav-desc .btn-link-desc{width: 100%; display: block;}
+	.btn-comprar{width: 100%}
+	#ticket-carrito{position: fixed; z-index: 3; bottom: 0; box-shadow: 0 0 8px 5px rgb(0 0 0 / 29%); padding: 15px 0 0;}
+	#ticket-carrito.normal{position: relative; z-index: auto; box-shadow: none}
+	#ticket-carrito h3{text-align: center;  width: 100%; margin-bottom: 5px; font-size: 1.2rem; font-weight: 800;}
+	#ticket-carrito table tr{margin-bottom:5px; margin-top: 5px;}
+	#ticket-carrito table tr td{padding: .25rem;}
+	tr#total-box-carrito #totalnum{font-size: 1.5em;}
+	.btn-update-carrito{width: 100%; float: none; margin-bottom: 15px;}
+	.title-product-link{font-size: 0.8em; margin-bottom: 5px; font-weight: 600;}
+	tr#total-box-carrito{height: 58px}
+	.normal#ticket-carrito tr#total-box-carrito #totalnum{height: 70px}
+	#btn-a-direct{display: block; color: #fff}
+}
+@media (max-width: 390px){
+	#collapsingNavbar1 .navbar-nav{float: none;}
+	#collapsingNavbar1 #header-cat{position: relative;}
+	#buscarform{margin: 0 auto;}
+	#links-account li{width: 100%; float: none; padding:5px}
+	#links-account a:nth-child(2n+1) li{border-right:none}
+	#links-account a:last-child li{text-align: left}
+}
+@media (max-width: 360px){
+	#boletin-form {width: 281px;}
+	#emailboletin {width: 160px;}
+}
+@media (max-width: 340px){
+	.lista-producto .tdimg{width: 60px}
+	.lista-producto img{width: 55px}
+	.btn-decrement, .btn-increment{min-width:1.5rem!important; padding: 0 .2rem;}
+	.lista-producto .input-group{max-width: 80px}
+	
+}
+@media (max-width: 300px){
+	.big-icon{font-size: 2em; float: none; margin: 0 auto}
+	.text-beneficios{text-align: center}
+	.box-cover-shop { height: 170px; min-height: 170px;}
+	#boletin-form{width: 100%}
+	#emailboletin{width: 100%; display: block; border-radius: 35px}
+	#boletin-form button{display: block; width: 70%; border-radius: 35px; margin: 15px auto 0}
+}
